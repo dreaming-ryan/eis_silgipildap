@@ -13,8 +13,8 @@
 :root {
   --c-bg:#F6F4F0;--c-surface:#FFFFFF;--c-border:#E6E2D8;--c-border2:#D4CEBC;
   --c-text:#1C1A16;--c-text2:#6B6456;--c-text3:#A09589;
-  --c-accent:#C0281A;--c-accent-l:#FDECEA;--c-accent-m:#E05A4E;
-  --c-tag-law:#8B2635;--c-tag-law-l:#F5E8EA;
+  --c-accent:#1A6BC4;--c-accent-l:#E8F0FD;--c-accent-m:#4A8FD4;
+  --c-tag-law:#1A5F9E;--c-tag-law-l:#E4EEF8;
   --c-tag-elec:#1558B0;--c-tag-elec-l:#E4EDF9;
   --c-tag-mach:#1A3F6F;--c-tag-mach-l:#E4EBF5;
   --c-tag-con:#7A5200;--c-tag-con-l:#FEF3E2;
@@ -67,7 +67,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--c-bg);color:var(--c-
 .cat-con{background:var(--c-tag-con-l);color:var(--c-tag-con)}
 .cat-prot{background:var(--c-tag-prot-l);color:var(--c-tag-prot)}
 .cat-calc{background:var(--c-tag-calc-l);color:var(--c-tag-calc)}
-.variant-badge-sm{background:linear-gradient(135deg,#C0281A,#E05A4E);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:.04em}
+.variant-badge-sm{background:linear-gradient(135deg,#1A6BC4,#4A8FD4);color:#fff;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;letter-spacing:.04em}
 .card-body{padding:1.25rem 1.5rem 0}
 .q-text{font-size:15px;line-height:1.8;color:var(--c-text)}
 .ans-wrap{border-top:1.5px dashed var(--c-border);overflow:hidden;max-height:0;transition:max-height .35s ease}
@@ -107,7 +107,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--c-bg);color:var(--c-
 .ans-img-wrap img{max-width:100%;border-radius:6px}
 .card-actions{padding:0 1.5rem 1.25rem;display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end;margin-top:1.25rem}
 .btn-reveal{flex:0 0 auto;background:var(--c-accent);color:#fff;border:none;border-radius:var(--r-sm);padding:10px 28px;font-size:14px;font-weight:700;cursor:pointer;transition:all .15s;font-family:inherit}
-.btn-reveal:hover{background:#9e1e12;transform:translateY(-1px)}
+.btn-reveal:hover{background:#1255A6;transform:translateY(-1px)}
 .btn-reveal.revealed{background:var(--c-bg);color:var(--c-text3);border:1.5px solid var(--c-border)}
 .btn-next{background:var(--c-surface);border:1.5px solid var(--c-accent);color:var(--c-accent);border-radius:var(--r-sm);padding:10px 20px;font-size:14px;font-weight:700;cursor:pointer;transition:all .15s;font-family:inherit}
 .btn-next:hover{background:var(--c-accent-l);transform:translateY(-1px)}
@@ -119,7 +119,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--c-bg);color:var(--c-
 .done-title{font-size:22px;font-weight:700;margin-bottom:.5rem}
 .done-desc{font-size:14px;color:var(--c-text2);margin-bottom:1.5rem}
 .btn-restart{background:var(--c-accent);color:#fff;border:none;border-radius:var(--r-sm);padding:12px 32px;font-size:15px;font-weight:700;cursor:pointer;transition:all .15s;font-family:inherit}
-.btn-restart:hover{background:#9e1e12;transform:translateY(-1px)}
+.btn-restart:hover{background:#1255A6;transform:translateY(-1px)}
 .empty-msg{display:none;text-align:center;padding:3rem 2rem;font-size:14px;color:var(--c-text3);background:var(--c-surface);border:1.5px solid var(--c-border);border-radius:var(--r);box-shadow:var(--shadow)}
 .empty-msg.show{display:block}
 @media(max-width:600px){.ctrl-panel{flex-direction:column}.ctrl-sep{width:100%;height:1px}}
@@ -128,11 +128,11 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--c-bg);color:var(--c-
 <body>
 <header class="site-header">
   <div class="header-inner">
-    <a href="sa_index.html" class="logo">
+    <a href="index.html" class="logo">
       <span class="logo-badge">⛑️</span>
       산업안전기사 실기 필답형
     </a>
-    <a href="sa_index.html" class="header-back">← 홈으로</a>
+    <a href="index.html" class="header-back">← 홈으로</a>
   </div>
 </header>
 <main class="main-wrap">
@@ -230,10 +230,10 @@ function loadQuizData() {
     .catch(function(err) {
       console.error('loadQuizData 오류:', err);
       document.getElementById('quiz-card-wrap').innerHTML =
-        '<div style="text-align:center;padding:3rem;color:#c0281a;font-size:14px">' +
+        '<div style="text-align:center;padding:3rem;color:#1A6BC4;font-size:14px">' +
         '<b>⚠️ 문제 데이터를 불러오지 못했습니다.</b><br>' +
         '<small>' + err.message + '</small><br><br>' +
-        '<button onclick="loadQuizData()" style="padding:8px 20px;background:#C0281A;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px">다시 시도</button>' +
+        '<button onclick="loadQuizData()" style="padding:8px 20px;background:#1A6BC4;color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:13px">다시 시도</button>' +
         '</div>';
     });
 }

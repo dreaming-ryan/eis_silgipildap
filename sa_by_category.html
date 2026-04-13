@@ -10,13 +10,13 @@
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--bg:#F5F4F0;--surface:#fff;--border:#E4E1D6;--text-main:#1C1A18;--text-sub:#6A6560;--text-muted:#A9A49D;--red:#C0281A;--red-l:#FDECEA;--r-lg:18px;--r-md:12px;--sh-sm:0 1px 4px rgba(0,0,0,.06);--sh-md:0 4px 20px rgba(0,0,0,.09);--sh-lg:0 12px 40px rgba(0,0,0,.12)}
+:root{--bg:#F5F4F0;--surface:#fff;--border:#E4E1D6;--text-main:#1C1A18;--text-sub:#6A6560;--text-muted:#A9A49D;--blue:#1A6BC4;--blue-l:#E8F0FD;--r-lg:18px;--r-md:12px;--sh-sm:0 1px 4px rgba(0,0,0,.06);--sh-md:0 4px 20px rgba(0,0,0,.09);--sh-lg:0 12px 40px rgba(0,0,0,.12)}
 body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text-main);min-height:100vh;display:flex;flex-direction:column;align-items:center}
 .site-header{width:100%;padding:1.1rem 1.5rem;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border);background:var(--surface);position:sticky;top:0;z-index:10}
 .back-btn{display:flex;align-items:center;gap:6px;text-decoration:none;font-size:13px;font-weight:500;color:var(--text-sub);padding:6px 12px;border:1px solid var(--border);border-radius:8px;background:var(--surface);transition:all .15s;flex-shrink:0}
 .back-btn:hover{color:var(--text-main);border-color:#ccc}
 .header-title{font-size:15px;font-weight:600;color:var(--text-main)}
-.header-badge{margin-left:auto;font-size:12px;font-weight:500;color:var(--red);background:var(--red-l);padding:4px 12px;border-radius:20px}
+.header-badge{margin-left:auto;font-size:12px;font-weight:500;color:var(--blue);background:var(--blue-l);padding:4px 12px;border-radius:20px}
 .main{width:100%;max-width:680px;padding:2.5rem 1.5rem 6rem}
 .page-hero{margin-bottom:2rem;animation:fadeUp .5s ease both}
 .page-hero h1{font-size:22px;font-weight:700;letter-spacing:-.03em;margin-bottom:5px}
@@ -52,7 +52,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 <body>
 
 <header class="site-header">
-  <a class="back-btn" href="sa_index.html">← 홈</a>
+  <a class="back-btn" href="index.html">← 홈</a>
   <span class="header-title">🏷️ 카테고리별 기출문제</span>
   <span class="header-badge" id="header-badge">로딩 중…</span>
 </header>
@@ -77,7 +77,7 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text
 <script src="sa_stats.js"></script>
 <script>
 var CAT_META = {
-  '산업안전보건법':  { emoji:'⚖️',  c:'#C0281A', cl:'#FDECEA' },
+  '산업안전보건법':  { emoji:'⚖️',  c:'#1A6BC4', cl:'#E8F0FD' },
   '전기·화학 안전': { emoji:'⚡',  c:'#1558B0', cl:'#E4EDF9' },
   '기계·설비 안전': { emoji:'⚙️',  c:'#1A3F6F', cl:'#E4EBF5' },
   '건설공사 안전':  { emoji:'🏗️', c:'#7A5200', cl:'#FEF3E2' },

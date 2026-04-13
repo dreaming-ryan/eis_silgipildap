@@ -1,7 +1,7 @@
 /**
  * sa_stats.js — 산업안전기사 퀴즈 파일(sa_quiz.html)의 questions 배열을 파싱하여
  * 연도·회차·카테고리 통계를 계산하고 콜백으로 반환합니다.
- * sa_index.html / sa_by_round.html / sa_by_category.html 에서 공유합니다.
+ * index.html / sa_by_round.html / sa_by_category.html 에서 공유합니다.
  */
 (function () {
   'use strict';
